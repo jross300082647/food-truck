@@ -9,6 +9,7 @@
   "author": "Justice Ross & Tyler Hanson",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "express": "^5.2.1",
     "mongodb": "^6.3.0"
   }

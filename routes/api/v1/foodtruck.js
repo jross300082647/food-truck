@@ -42,4 +42,18 @@ router.get('/menu/:id', async (request, response) => {
     const id = request.params.id
 })
 
+router.post('/menu', async (request, response) => {
+    const {number, item, description, price, image} = request.body 
+    const collection = await getMenu()
+    const { acknowledged, insertedId } = await collection.insertOne({ number, item, description, price, image })
+    response.send( { acknowledged, insertedId } )
+})
+
+router.post('/events', async (request, response) => {
+    const {number, eventName, location, date, time} = request.body
+    const collection = await getEvents()
+    const { acknowledged, insertedId } = await collection.insertOne({ number, eventName, location, date, time })
+    response.send( { acknowledged, insertedId } )
+})
+
 module.exports = router;

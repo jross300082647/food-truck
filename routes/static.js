@@ -12,7 +12,7 @@ router.get('/event/:eventId', (request, response) => {
 })
 
 router.get('/admin', (request, response) => {
-    response.sendFile('admin.html', { root })
+    response.sendFile('admin.js', { root })
 })
 
 module.exports = router;

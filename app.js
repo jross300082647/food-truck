@@ -5,6 +5,8 @@ const port = 3000;
 // middleware
 app.use(express.static('public'))
 app.use(express.json())
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
+
 
 
 // attach endpoints
