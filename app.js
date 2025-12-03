@@ -8,7 +8,7 @@ app.use(express.json())
 
 
 // attach endpoints
-app.use('/api/v1/foodtruck', require('./routes/api/v1/foodtruck'))
+app.use('/api/v1', require('./routes/api/v1/foodtruck'))
 app.use(require('./routes/static'))
 
 // server start
