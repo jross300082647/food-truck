@@ -39,7 +39,19 @@ router.get('/events', async (request, response) => {
 })
 
 router.get('/menu/:id', async (request, response) => {
-    const id = request.params.id
+    const { id } = request.params
+    const collection = await getMenu()
+    const found = await collection.findOne( { number: parseInt(id) } )
+    if (found) response.send(found)
+        else response.send( { error: { message : `No menu item with id ${id} found.` } } )
+})
+
+router.get('/events/:id', async (request, response) => {
+    const { id } = request.params
+    const collection = await getEvents()
+    const found = await collection.findOne( { number: parseInt(id) } )
+    if (found) response.send(found)
+        else response.send( { error: { message : `No event with id ${id} found.` } } )
 })
 
 router.post('/menu', async (request, response) => {
