@@ -1,0 +1,6 @@
+### Variables
+@url = http://localhost:3000/
+@apiUrl = http://localhost:3000/api/v1/menu
+
+### Menu Items Endpoint
+GET {{{{{{url}}}}}}
