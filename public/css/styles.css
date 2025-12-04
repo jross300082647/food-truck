@@ -2,6 +2,12 @@ body {
     background-color: rgba(151, 175, 175, 0.425);
 }
 
+#main h2 {
+    text-align: center;
+}
+
+
+/* Menu Item Styles */
 .menu-items {
     margin-left: auto;
     margin-right: auto;
@@ -20,6 +26,7 @@ body {
     height: 400px;
     margin-bottom: 5px;
     padding: 30px;
+    background-color: rgba(255, 228, 196, 0.726);
     overflow: hidden;
 }
 
@@ -45,4 +52,77 @@ body {
     padding-right: 5px;
 }
  
+/* Events Styles */
+.events {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
 
+.event {
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: rgba(255, 228, 196, 0.726);
+    text-align: center;
+    width: 50%;
+}
+
+.event:hover {
+    background-color: rgb(155, 137, 114);
+}
+
+.eventInfo {
+    display: none;
+}
+
+/* Admin Form styles */
+.adminForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.add-on {
+    margin-right: auto;
+    margin-left: auto;
+    width: 45%;
+    background-color: rgba(255, 228, 196, 0.726);
+    border: 2px ridge black;
+    clear: both;
+}
+
+.add-on legend {
+    text-align: center;
+}
+
+.formRow {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    overflow: hidden;
+    padding-bottom: 7px;
+}
+
+.add-on label {
+    padding-left: 1%;
+}
+
+.add-on input[type=text] {
+    float: right;
+}
+
+.add-on button {
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.confirmation {
+    flex-basis: 100%;
+    text-align: center;
+    height: 38px;
+}
